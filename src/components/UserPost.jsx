@@ -3,7 +3,7 @@ import React from 'react'
 import { BsThreeDots } from 'react-icons/bs'
 
 
-const UserPost = () => {
+const UserPost = ({postImg,postTitle,likes,replies}) => {
   return (
     <Link to={"/devanshsaxena/post/1"}>
         
@@ -56,24 +56,29 @@ const UserPost = () => {
                     </Flex>
                     
                 </Flex>
-                <Text fontSize={"sm"}>This is my first post</Text>
-                <Box 
-                borderRadius={6}
-                overflow={"hidden"}
-                border={"1px solid"}
-                borderColor={"gray.light"}>
-                    <Image src='/post1.png' w={"full"} />
+                <Text fontSize={"sm"}>{postTitle}</Text>
+                {postImg && (
+                                  <Box 
+                                  borderRadius={6}
+                                  overflow={"hidden"}
+                                  border={"1px solid"}
+                                  borderColor={"gray.light"}>
+                                      <Image src={postImg} w={"full"} />
+                  
+                                  </Box>
 
-                </Box>
+                )}
+  
                 <Flex gap={3} my={1}>
                 </Flex>
             </Flex>
             <Flex gap={2} alignItems={"center"}>
-                <Text color={"gray.light"} fontSize={"sm"}>123 replies</Text>
+                <Text color={"gray.light"} fontSize={"sm"}>{replies} replies</Text>
                 <Box w={0.5}h={0.5} borderRadius={"full"} bg={"gray.light"}></Box>
-                <Text color={"gray.ligth"} fontSize={"sm"}>456 likes</Text>
+                <Text color={"gray.ligth"} fontSize={"sm"}>{likes}likes</Text>
             </Flex>
         </Flex> 
+        
         
     </Link>
   )

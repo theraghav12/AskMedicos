@@ -23,7 +23,11 @@ const UserHeader = () => {
             </Text>
             <Flex gap={2} alignItems={"centre"}>
                 <Text fontSize={"sm"}>Devansh</Text>
-                <Text fontSize={"xs"}
+                <Text fontSize={{
+                    base: "xs",
+ 
+
+                }}
                 bg={"gray.dark"} color={"gray.light"}
                 p={1} borderRadius={"full"}>mymedicos.com</Text>
             </Flex>
@@ -33,6 +37,11 @@ const UserHeader = () => {
                 <Avatar
                 name="Devansh Saxena"
                 src="/zack-avatar.png"
+                size={{
+                    base:"md",
+                    md: "xl"
+                    
+                }}
                 />
             </Box> 
         </Flex>
