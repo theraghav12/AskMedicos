@@ -12,7 +12,7 @@ function PostPage() {
       <Flex w={"full"} alignItems={"center"} gap={3}>
         <Avatar src='zack-avatar.png' size={"md"} name='Devansh Saxena'/>
         <Flex>
-          <Text fontsize={"sm"} fontWeight={"bold"}>devanshsaxena</Text>
+          <Text fontSize={"sm"} fontWeight={"bold"}>devanshsaxena</Text>
           <Image src='/verified.png' w="4" h={4} mi={4} />
         </Flex>
       </Flex>
@@ -61,6 +61,31 @@ function PostPage() {
      </Flex>
 
      <Divider my={4}/>
+     <Comment
+     comment="Looks really good!"
+     createdAt="2d"
+     likes={100}
+     username="johndoe"
+     userAvatar=".."
+
+     />
+     <Comment
+     comment="Looks really d!"
+     createdAt="9d"
+     likes={890}
+     username="jane"
+     userAvatar=".."
+
+     />
+     <Comment
+     comment="Look eally good!"
+     createdAt="2d"
+     likes={1900}
+     username="sally"
+     userAvatar=".."
+
+     />
+
 
     </>
   )
