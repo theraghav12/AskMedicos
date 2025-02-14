@@ -8,7 +8,7 @@ const Comment = ({userAvatar,createdAt,comment,username,likes}) => {
 
   return (
     <>
-    <Flex gap={4} py={2} my={2} w={"full"}>
+    <Flex gap={4} py={2} my={4} w={"full"}>
       <Avatar src={userAvatar} size={"sm"}/>
       <Flex gap={1} w={"full"} flexDirection={"column"}>
         <Flex w={"full"} justifyContent={"space-between"} alignItems={"center"}>
